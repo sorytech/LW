@@ -1,0 +1,118 @@
+<html xmlns:act="http://www.ujf-grenoble.fr/l3miage/actes" xmlns:ns1="http://www.ujf-grenoble.fr/l3miage/medical">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Page infirmier</title>
+<link rel="stylesheet" type="text/css" href="./css/infirmier.css">
+<script type="text/javascript" src="./js/facture.js"></script><script type="text/javascript"> 
+                    
+                    
+                        function openFacture(prenom, nom, actes) {
+                            var width  = 500;
+                            var height = 300;
+                            if(window.innerWidth) {
+                                var left = (window.innerWidth-width)/2;
+                                var top = (window.innerHeight-height)/2;
+                            }
+                            else {
+                            var left = (document.body.clientWidth-width)/2;
+                            var top = (document.body.clientHeight-height)/2;
+                            }
+                            var factureWindow = window.open('','facture','menubar=yes, scrollbars=yes, top='+top+', left='+left+', width=800, height=500');
+                            factureText = afficherFacture(prenom, nom, actes);
+                            factureWindow.document.write(factureText);
+                        }        
+                    
+                </script>
+</head>
+<body>
+<h1> Le voyageur de sant&eacute; : IHM de la secr&eacute;taire</h1>
+<div class="page">
+<div class="infirmier">
+<div class="image">
+<img src="image/sarah.png" alt="Smiley face" width="100" height="100"></div>
+<div class="imagecabinet">
+<img src="image/infirmiere.jpg" alt="Smiley face" width="100" height="100"></div>
+<div class="pres">
+                    Bonjour Sarah<br>
+                    Aujourd'hui, vous avez 3 patients<br>
+</div>
+</div>
+<div class="patient">
+<h2> Informations des Patients</h2>
+</div>
+<table>
+<thead>
+<tr>
+<th>Nom</th><th>Adresse</th><th>Soins</th><th>Facture</th>
+</tr>
+</thead>
+<tbody>
+<tr class="success">
+<td><span>Yvon</span><span>Al&eacute;cole</span></td><td>6
+                        i&egrave;me Etage
+                    <br>
+<br>
+<span>50</span><span>avenue F&eacute;lix Viallet</span>
+<br>
+<span>38031</span><span>Grenoble</span></td><td>
+            Elaboration de la d&eacute;mache de soins infirmiers &agrave; domicile, planification 
+            des soins et r&eacute;daction du r&eacute;sum&eacute; de la d&eacute;marche de soins infirimiers.
+        <br>
+</td><td><button onclick="
+                            openFacture('Yvon', 
+                            'Al&eacute;cole', 
+                            '')
+                        ">   
+                        Facture
+                    </button>
+<br>
+</td>
+</tr>
+<tr class="success">
+<td><span>Oscar</span><span>Pien</span></td><td>
+<br>
+<br>
+<span></span><span>rue Casimir Brenier</span>
+<br>
+<span>38000</span><span>Grenoble</span></td><td>
+            Injection intraveineuse directe en s&eacute;rie.
+        <br>
+            Pansement chirurgical n&eacute;cessitant un m&eacute;chage ou une irrigation.
+        <br>
+</td><td><button onclick="
+                            openFacture('Oscar', 
+                            'Pien', 
+                            '')
+                        ">   
+                        Facture
+                    </button>
+<br>
+</td>
+</tr>
+<tr class="success">
+<td><span>Xavier</span><span>Kapo&euml;tla</span></td><td>
+<br>
+<br>
+<span>25</span><span>rue des Martyrs</span>
+<br>
+<span>38042</span><span>Grenoble</span></td><td>
+            Injection d'un ou plusieurs allerg&egrave;nes, poursuivant un traitement
+            d'hyposensibilisation sp&eacute;cifique, selon le protocole &eacute;crit, y compris la
+            surveillance, la tenue du dossier de soins, la transmission des informations 
+            au m&eacute;decin prescripteur.
+        <br>
+</td><td><button onclick="
+                            openFacture('Xavier', 
+                            'Kapo&euml;tla', 
+                            '')
+                        ">   
+                        Facture
+                    </button>
+<br>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

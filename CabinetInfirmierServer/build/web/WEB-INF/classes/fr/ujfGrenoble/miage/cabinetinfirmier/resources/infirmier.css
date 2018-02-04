@@ -1,0 +1,114 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 13, 2017, 1:17:28 AM
+    Author     : diallo
+*/
+
+table {
+    margin-top:10px;
+    margin-bottom:10px;
+    border: 2px solid black;
+    height : 133px;
+    text-align: justify;    
+    padding: 8px;
+    border-radius: 20px;
+    background-image: url("https://images.freecreatives.com/wp-content/uploads/2016/04/Blurred-Web-Backgrounds-HD-Wallpaper.jpg");
+}
+td {
+    max-width: 700px;
+    padding: 5px;
+    border: 2px solid black; 
+}
+tr:hover {
+   background-color: #A9BCF5; 
+}
+body {
+    margin: 10px;
+    font: 14px Arial;
+    color: darkblue;
+    background-image: url("https://images.freecreatives.com/wp-content/uploads/2016/04/Blurred-Web-Backgrounds-HD-Wallpaper.jpg");
+}
+h1 {
+    font-size: 32px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #aaaaaa;
+    border-radius: 5px;
+    margin-left: 0px;
+    margin-right: 0px;   
+}
+h2 {
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #aaaaaa;
+    border-radius: 5px;
+    margin-left: 0px;
+    margin-right: 0px;   
+}
+h3 {
+    font-size: 18px;
+    color: darkblue;
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 0px;   
+}
+img {
+    max-width: 185px;
+    max-height: 200px;
+    border-radius: 30px;
+    float:left;
+    vertical-align: middle;
+}
+.footer{
+ float: bottom;    
+}
+th{
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #aaaaaa;   
+}
+head{
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #aaaaaa;   
+}
+span{
+    display: inherit;  
+}
+.pres{
+    margin-left: 150px; 
+    font-size: 20px;
+}
+.presfac{
+    margin-top: 20px;
+    margin-left: 20px; 
+    font-size: 20px;
+}
+.image{
+     float: left; 
+}
+.imagecabinet{
+     float: right; 
+}
+.infirmier{
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+.page{
+  padding: 55px;  
+}
+.patient{
+    margin-left: 10px;
+    margin-right: 25px;
+}
+strong{
+     font-weight: bold;
+}
+
